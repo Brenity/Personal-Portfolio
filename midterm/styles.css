@@ -1,0 +1,175 @@
+/*
+COLOR PALETTE
+https://coolors.co/f7fff6-ffbeef-ec91d8-5f4b66-2f2504
+#F7FFF6 - Mint Cream
+#FFBEEF - Cherry Blossom Pink
+#EC91D8 - Plum
+#5F4B66 - Davys Grey
+#2F2504 - Dark Chocolate
+*/
+
+/* Profile */
+header {
+    background: #EC91D8; 
+    color: #2F2504; /* Change the text color to match the background */
+    text-align: center;
+  }
+  
+  /* Projects */
+  .projects {
+    background: #FFBEEF; 
+  }
+  .projects a {
+    color: #5F4B66; 
+  }
+  .projects .btn {
+    color: #2F2504;
+    background: #FFBEEF;
+  }
+  .projects .btn:hover {
+    background: #EC91D8; 
+  }
+  
+  /* Education */
+  .education {
+    background-color: #F7FFF6;
+    color: #4C3B0B; 
+  }
+  
+  /* Footer */
+  footer {
+    background: #2F2504; 
+    color: #F7FFF6;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  /* Reset and General Styles */
+  html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    color: #343434;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  
+  h1 {
+    font-size: 5em;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1;
+  }
+  
+  h2 {
+    font-size: 1.25em;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .content-wrap {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+  }
+  
+  h3 {
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .item-details h3 + p {
+    font-style: italic;
+  }
+  
+  .item-details h3 ~ p {
+    margin: 0;
+  }
+  
+  .divider > section {
+    border-bottom: 1px dashed #343434;
+    padding: 25px 0;
+  }
+  .divider > section:last-of-type {
+    border-bottom: none;
+  }
+  
+  .contact-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .contact-list a {
+    padding: 15px;
+    display: inline-block;
+  }
+  
+  /* Responsive */
+  @media screen and (min-width: 750px) {
+    header,
+    footer {
+      text-align: center;
+    }
+    
+    .project-item {
+      overflow: hidden; /* Prevent images from overflowing */
+    }
+    
+    .project-item img {
+      float: left;
+      margin-right: 20px;
+      width: 150px; /* Adjust image width */
+      height: auto; /* Maintain aspect ratio */
+    }
+  
+    .job-item {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      column-gap: 20px;
+    }
+    
+    .contact-list {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
+  @media screen and (max-width: 749px) {
+    h1 {
+      font-size: 2em;
+      line-height: 0.9;
+      margin-bottom: 20px;
+    }
+    
+    h2 {
+      font-size: 1.2em;
+      line-height: 1;
+    }
+    
+    .contact-list a {
+      padding: 5px;
+    }
+    
+    img {
+      width: 90%; /* Make images responsive */
+      height: auto;
+      margin-bottom: 20px; /* Add space between images */
+    }
+  }
+  

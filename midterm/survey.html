@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Game Survey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333333;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            color: #555555;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #555555;
+        }
+        input[type="text"], input[type="email"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            color: #333333;
+        }
+        textarea {
+            height: 100px;
+        }
+        input[type="submit"] {
+            background-color: #8f9779;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #6f7661;
+        }
+    </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("surveyForm").addEventListener("submit", function(event) {
+                event.preventDefault();
+                window.location.href = "typage.html"; 
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>What is your favorite game?</h1>
+    <form id="surveyForm" action="submit_survey.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="favorite-genre">Favorite Video Game Genre:</label>
+        <select id="favorite-genre" name="favorite_genre" required>
+            <option value="">Select</option>
+            <option value="action">Action</option>
+            <option value="adventure">Adventure</option>
+            <option value="rpg">Role-Playing Game (RPG)</option>
+            <option value="fps">First-Person Shooter (FPS)</option>
+            <option value="horror">Horror</option>
+            <option value="puzzle">Puzzle</option>
+        </select>
+
+        <label for="favorite-game">Favorite Video Game:</label>
+        <input type="text" id="favorite-game" name="favorite_game" required>
+
+        <label>Preferred Gaming Platform:</label>
+        <div>
+            <input type="radio" id="console" name="platform" value="console" required>
+            <label for="console">Console</label>
+        </div>
+        <div>
+            <input type="radio" id="pc" name="platform" value="pc" required>
+            <label for="pc">PC</label>
+        </div>
+        <div>
+            <input type="radio" id="mobile" name="platform" value="mobile" required>
+            <label for="mobile">Mobile</label>
+        </div>
+        
+        <div>
+            <label for="fave-char">Favorite Video Game Character</label>
+            <textarea id="fave-char" name="fave-char"></textarea>
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
