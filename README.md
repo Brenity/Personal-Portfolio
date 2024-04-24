@@ -1,7 +1,7 @@
 # Personal-Portfolio
 Portfolio created for my Midterm
 
-#<!-- I successfully completed both extra credit opportunities. Unfortunately,
+#I successfully completed both extra credit opportunities. Unfortunately,
  > the text box for submitting additional information didn't allow me to input
  > anything and upload the file, since only one form of submission was
  > allowed. However, you can find my project portfolio at the following link:
@@ -14,4 +14,4 @@ Portfolio created for my Midterm
  > * Section Headings (h3): Josefin Slab, serif
  > These fonts are all listed in the CSS file. If you have any further
  > questions or need additional information, feel free to ask!
--->
+
