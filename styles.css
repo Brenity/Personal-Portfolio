@@ -13,6 +13,8 @@ header {
     background: #EC91D8; 
     color: #2F2504; /* Change the text color to match the background */
     text-align: center;
+    font-family: "Poppins", sans-serif;
+    
   }
   
   /* Projects */
@@ -25,6 +27,7 @@ header {
   .projects .btn {
     color: #2F2504;
     background: #FFBEEF;
+    text-decoration: underline;
   }
   .projects .btn:hover {
     background: #EC91D8; 
@@ -35,6 +38,13 @@ header {
     background-color: #F7FFF6;
     color: #4C3B0B; 
   }
+  .education .btn{
+    font-style: bold;
+    text-decoration: underline;
+  }
+  .education .btn:hover{
+    background: #d5cbb2;
+  }
   
   /* Footer */
   footer {
@@ -42,7 +52,9 @@ header {
     color: #F7FFF6;
     padding: 20px;
     width: 100%;
-  }
+
+}
+
   
   /* Reset and General Styles */
   html {
@@ -56,7 +68,7 @@ header {
     color: #343434;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Josefin Sans';
     font-size: 18px;
     line-height: 1.5;
   }
@@ -74,12 +86,15 @@ header {
     font-weight: 700;
     margin: 0;
     line-height: 1;
+    font-family: 'Prata';
   }
-  
+
+
   h2 {
     font-size: 1.25em;
     font-weight: 700;
     margin: 0;
+    font-family: 'Amiri', serif;
   }
   
   .content-wrap {
@@ -90,9 +105,12 @@ header {
   }
   
   h3 {
-    font-weight: 700;
+    font-weight: bolder;
     margin: 0;
+    font-family: 'Josefin Slab';
   }
+
+
   
   .item-details h3 + p {
     font-style: italic;
@@ -110,15 +128,20 @@ header {
     border-bottom: none;
   }
   
+
   .contact-list {
     list-style-type: none;
     padding: 0;
   }
-  
   .contact-list a {
     padding: 15px;
     display: inline-block;
+    /* color: ; */
   }
+  .item-details h4 + p {
+    font-style: italic;
+  }
+
   
   /* Responsive */
   @media screen and (min-width: 750px) {
